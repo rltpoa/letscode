@@ -19,7 +19,7 @@ public class EscreverArquivos {
     public static ArrayList<String> retornaListaAsc(String caminho, String arquivo, String voltas) {
         ArrayList<String> lista = new ArrayList<String>();
         for (int i = 1; i <= Integer.parseInt(voltas); i++) {
-            lista.add(lista.size(), caminho + "/" + arquivo + i);
+            lista.add("touch " + caminho + "/" + arquivo + i);
             //System.out.println("touch " + caminho + "/" + arquivo + i);
         }
         return lista;
