@@ -1,17 +1,17 @@
 public class EscondeTexto {
 
     public static void main(String[] args) {
-        String texto = "abacaxi";
-        System.out.println("texto original: " + texto);
-        System.out.println("texto escondido: " + hideChars(texto));
+        String text = "abacaxi";
+        System.out.println("texto original: " + text);
+        System.out.println("texto escondido: " + hideChars(text));
     }
 
-    public static String hideChars(String texto) {
-        String textoEscondido = "";
-        for (int i = 0; i < texto.length(); i++) {
-            textoEscondido += "* ";
+    public static String hideChars(String text) {
+        String hiddenText = "";
+        for (int i = 0; i < text.length(); i++) {
+            hiddenText += "* ";
         }
-        return textoEscondido;
+        return hiddenText;
     }
 
 }
